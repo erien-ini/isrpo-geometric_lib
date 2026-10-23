@@ -1,10 +1,43 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Documentation for Geometric Lib
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+## General description
+Библиотека `geometric_lib` предоставляет набор функций на языке Python для вычисления площади и периметра плоских геометрических фигур (круга, квадрата, прямоугольника, треугольника).
+
+## Target functions with examples
+
+### 1. Circle (`circle.py`)
+- **Area (`area(r)`)**:
+  - Принимает радиус круга `r`, возвращает его площадь (math.pi * r * r).
+  - Пример вызова: `area(5)` -> `78.53981633974483`
+- **Perimeter (`perimeter(r)`)**:
+  - Принимает радиус круга `r`, возвращает длину окружности (2 * math.pi * r).
+  - Пример вызова: `perimeter(5)` -> `31.41592653589793`
+
+### 2. Square (`square.py`)
+- **Area (`area(a)`)**:
+  - Принимает сторону квадрата `a`, возвращает его площадь (a * a).
+  - Пример вызова: `area(4)` -> `16`
+- **Perimeter (`perimeter(a)`)**:
+  - Принимает сторону квадрата `a`, возвращает его периметр (4 * a).
+  - Пример вызова: `perimeter(4)` -> `16`
+
+### 3. Rectangle (`rectangle.py`)
+- **Area (`area(a, b)`)**:
+  - Принимает стороны `a` и `b`, возвращает площадь прямоугольника (a * b).
+  - Пример вызова: `area(3, 5)` -> `15`
+- **Perimeter (`perimeter(a, b)`)**:
+  - Принимает стороны `a` и `b`, возвращает периметр (2 * (a + b)).
+  - Пример вызова: `perimeter(3, 5)` -> `16`
+
+### 4. Triangle (`triangle.py`)
+- **Area (`area(a, h)`)**:
+  - Принимает сторону `a` и высоту `h`, возвращает площадь треугольника (a * h / 2 ).
+  - Пример вызова: `area(4, 3)` -> `6.0`
+- **Perimeter (`perimeter(a, b, c)`)**:
+  - Принимает стороны `a`, `b`, `c`, возвращает периметр треугольника (a + b + c ).
+  - Пример вызова: `perimeter(3, 4, 5)` -> `12`
+
+## Project History
+
+* d078c8d L-03: Docs added
+* 8ba9aeb L-03: Circle and square added
